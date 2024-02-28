@@ -19,3 +19,7 @@ if (daysUntilExpiration == 1) {
     Console.WriteLine($"Renew now and save 20%!");
     discountPercentage += 20;
 }
+
+if (daysUntilExpiration == 0) {
+    Console.WriteLine("Your subscription has expired.");
+}
