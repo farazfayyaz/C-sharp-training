@@ -25,3 +25,5 @@ Console.WriteLine($"Third: {arr2[2]}");
 arr2[0] = "F000";
 
 Console.WriteLine($"Reassign First: {arr2[0]}");
+
+Console.WriteLine($"There are {arr2.Length} fraudulent orders to process.");
