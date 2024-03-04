@@ -27,3 +27,8 @@ arr2[0] = "F000";
 Console.WriteLine($"Reassign First: {arr2[0]}");
 
 Console.WriteLine($"There are {arr2.Length} fraudulent orders to process.");
+
+string[] names = { "Rowena", "Robin", "Bao" };
+foreach (string name in names) {
+    Console.WriteLine(name);
+}
