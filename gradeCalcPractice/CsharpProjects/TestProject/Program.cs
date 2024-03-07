@@ -28,33 +28,13 @@ Logan:          91.2    A-
 // initialize variables - graded assignments 
 int currentAssignments = 5; //num of assignments
 
-//sophia scores
-int sophia1 = 90;
-int sophia2 = 86;
-int sophia3 = 87;
-int sophia4 = 98;
-int sophia5 = 100;
 
-// andrew scores
-int andrew1 = 92;
-int andrew2 = 89;
-int andrew3 = 81;
-int andrew4 = 96;
-int andrew5 = 90;
-
-//emma scores
-int emma1 = 90;
-int emma2 = 85;
-int emma3 = 87;
-int emma4 = 98;
-int emma5 = 68;
-
-//logan scores
-int logan1 = 90;
-int logan2 = 95;
-int logan3 = 87;
-int logan4 = 88;
-int logan5 = 96;
+//array of 5 integers, holding score info for each student
+int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
+int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+//cleans up code
 
 //stores total for each student's grade
 int sophiaSum = 0;
