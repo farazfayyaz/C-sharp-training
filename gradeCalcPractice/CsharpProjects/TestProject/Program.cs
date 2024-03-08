@@ -53,11 +53,17 @@ int sophiaSum = 0;
 
 decimal sophiaScore;
 
+foreach (int score in sophiaScores) {
+    // add the exam score to the sum
+    sophiaSum += score;
+}
+
 //calculate average and store into score variable
 sophiaScore = (decimal)sophiaSum / currentAssignments;
 
 //print lines with formatting
 Console.WriteLine("Student\t\tGrade\n");
 Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+
 Console.WriteLine("Press the Enter key to continue");
 Console.ReadLine();
