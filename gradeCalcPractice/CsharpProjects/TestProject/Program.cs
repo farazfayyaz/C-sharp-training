@@ -38,19 +38,8 @@ int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
 //stores total for each student's grade
 int sophiaSum = 0;
-int andrewSum = 0;
-int emmaSum = 0;
-int loganSum = 0;
 
 //initialize decimal variables for the average
-decimal sophiaScore;
-decimal andrewScore;
-decimal emmaScore;
-decimal loganScore;
-
-//add all the variables together for the sum
-int sophiaSum = 0;
-
 decimal sophiaScore;
 
 foreach (int score in sophiaScores) {
