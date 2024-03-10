@@ -36,6 +36,12 @@ int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
 int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 //cleans up code
 
+string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan"}
+
+foreach (string name in studentNames) {
+    Console.WriteLine($"{name}")
+}
+
 //stores total for each student's grade
 int sophiaSum = 0;
 
