@@ -1,3 +1,3 @@
-﻿string value1 = " a";
-string value2 = "A ";
-Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+﻿int saleAmount = 1001;
+int discount = saleAmount > 1000 ? 100 : 50;
+Console.WriteLine($"Discount: {discount}");
