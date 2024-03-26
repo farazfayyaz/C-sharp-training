@@ -20,3 +20,10 @@ do
 } while (heroHealth > 0 && monsterHealth > 0); //loop while both health bars are greater than 0
 
 Console.WriteLine(heroHealth > monsterHealth ? "Hero wins!" : "Monster wins!"); // display who wins
+
+string? readResult;
+Console.WriteLine("Enter a string:");
+do
+{
+    readResult = Console.ReadLine();
+} while (readResult == null);
