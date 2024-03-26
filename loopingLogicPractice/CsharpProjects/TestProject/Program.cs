@@ -1,20 +1,22 @@
-﻿Random random = new Random();
-int current = random.Next(1, 11);
+﻿int heroHealth = 10; //hero health
+int monsterHealth = 10; //mosnster health
 
-do
+Random val = new Random(); //new random object
+
+
+do 
 {
-    current = random.Next(1, 11);
+    int attackVal = val.Next(1, 11); // generate random num for attack
+    monsterHealth -= attackVal; // subtract the damage from the monster health
+    Console.WriteLine($"Monster was damaged and lost {attackVal} health and now has {monsterHealth} health."); // display monster health
 
-    if (current >= 8) continue;
+    if (monsterHealth <= 0) continue; // if monster health is not 0 or less, continue
 
-    Console.WriteLine(current);
-} while (current != 7);
+    attackVal = val.Next(1, 11); // generate new num for attack
+    heroHealth -= attackVal; // subtract the damage from the hero health
+    Console.WriteLine($"Hero was damaged and lost {attackVal} health and now has {heroHealth} health."); //display
 
-/*
-while (current >= 3)
-{
-    Console.WriteLine(current);
-    current = random.Next(1, 11);
-}
-Console.WriteLine($"Last number: {current}");
-*/
+    
+} while (heroHealth > 0 && monsterHealth > 0); //loop while both health bars are greater than 0
+
+Console.WriteLine(heroHealth > monsterHealth ? "Hero wins!" : "Monster wins!"); // display who wins
