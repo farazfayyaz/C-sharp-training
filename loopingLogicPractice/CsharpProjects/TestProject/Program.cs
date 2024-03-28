@@ -21,9 +21,9 @@ do
 
 Console.WriteLine(heroHealth > monsterHealth ? "Hero wins!" : "Monster wins!"); // display who wins
 
-string? readResult;
+string? readResult; //asking for a string user input
 Console.WriteLine("Enter a string:");
 do
 {
-    readResult = Console.ReadLine();
+    readResult = Console.ReadLine(); //used to enter a input from user
 } while (readResult == null);
