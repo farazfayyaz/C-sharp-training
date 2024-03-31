@@ -31,5 +31,5 @@ for (int i = 0; i < stringsCount; i++)
     }
  
     mySentence = myString.Trim();
-    Console.WriteLine(mySentence);
+    Console.WriteLine(mySentence); // display the string per line
 }
