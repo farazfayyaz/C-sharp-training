@@ -2,7 +2,15 @@
 
 Console.WriteLine("Sorted....");
 Array.Sort(pallets);
-foreach (string pallet in pallets)
+foreach (var pallet in pallets)
 {
     Console.WriteLine($"--{pallet}");
+}
+
+Console.WriteLine("");
+Console.WriteLine("Reversed....");
+Array.Reverse(pallets);
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
 }
