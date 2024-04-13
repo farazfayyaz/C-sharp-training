@@ -57,10 +57,10 @@
 string pangram = "The quick brown fox jumps over the lazy dog";
 
 // Step 1
-string[] message = pangram.Split(' ');
+string[] message = pangram.Split(' '); //split the string into an array of words without spaces
 
 //Step 2
-string[] newMessage = new string[message.Length];
+string[] newMessage = new string[message.Length]; //make a new array as long as the split up sentence
 
 // Step 3
 for (int i = 0; i < message.Length; i++)
