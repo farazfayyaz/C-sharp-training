@@ -54,22 +54,42 @@
 //-------------------------------------------------------------------------
 //Challenge: reverse each word in the panagram and return the new sentence
 
-string pangram = "The quick brown fox jumps over the lazy dog";
+// string pangram = "The quick brown fox jumps over the lazy dog";
 
-// Step 1
-string[] message = pangram.Split(' '); //split the string into an array of words without spaces
+// // Step 1
+// string[] message = pangram.Split(' '); //split the string into an array of words without spaces
 
-//Step 2
-string[] newMessage = new string[message.Length]; //make a new array as long as the split up sentence
+// //Step 2
+// string[] newMessage = new string[message.Length]; //make a new array as long as the split up sentence
 
-// Step 3
-for (int i = 0; i < message.Length; i++)
+// // Step 3
+// for (int i = 0; i < message.Length; i++)
+// {
+//     char[] letters = message[i].ToCharArray();
+//     Array.Reverse(letters);
+//     newMessage[i] = new string(letters);
+// }
+
+// //Step 4
+// string result = String.Join(" ", newMessage);
+// Console.WriteLine(result);
+
+//-------------------------------------------------------------------------
+//Challenge: parse OrderIDs and return a sorted list and error tag if they aren't 4 characters
+
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+string[] orderIDs = orderStream.Split(",");
+Array.Sort(orderIDs);
+
+foreach (string orderID in orderIDs)
 {
-    char[] letters = message[i].ToCharArray();
-    Array.Reverse(letters);
-    newMessage[i] = new string(letters);
+    if (orderID.Length == 4)
+    {
+        Console.WriteLine(orderID);
+    }
+    else
+    {
+        Console.WriteLine($"{orderID}\t - Error");
+    }
 }
-
-//Step 4
-string result = String.Join(" ", newMessage);
-Console.WriteLine(result);
