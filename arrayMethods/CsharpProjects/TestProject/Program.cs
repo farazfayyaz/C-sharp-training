@@ -37,16 +37,39 @@
 //     Console.WriteLine($"-- {pallet}");
 // }
 
-string value = "abc123";
-char[] valueArray = value.ToCharArray();
+// string value = "abc123";
+// char[] valueArray = value.ToCharArray();
 
-Array.Reverse(valueArray);
+// Array.Reverse(valueArray);
 
-string result = String.Join(",", valueArray);
-Console.WriteLine(result);
+// string result = String.Join(",", valueArray);
+// Console.WriteLine(result);
 
-string[] items = result.Split(',');
-foreach (string item in items)
+// string[] items = result.Split(',');
+// foreach (string item in items)
+// {
+//     Console.WriteLine(item);
+// }
+
+//-------------------------------------------------------------------------
+//Challenge: reverse each word in the panagram and return the new sentence
+
+string pangram = "The quick brown fox jumps over the lazy dog";
+
+// Step 1
+string[] message = pangram.Split(' ');
+
+//Step 2
+string[] newMessage = new string[message.Length];
+
+// Step 3
+for (int i = 0; i < message.Length; i++)
 {
-    Console.WriteLine(item);
+    char[] letters = message[i].ToCharArray();
+    Array.Reverse(letters);
+    newMessage[i] = new string(letters);
 }
+
+//Step 4
+string result = String.Join(" ", newMessage);
+Console.WriteLine(result);
