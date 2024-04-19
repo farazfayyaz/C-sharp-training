@@ -43,4 +43,4 @@
 //------------------------------------------------------------------------------
 
 string input = "Pad this";
-Console.WriteLine(input.PadLeft(12)); // padleft method adds spacing on the left of the string
+Console.WriteLine(input.PadRight(12)); // padleft method adds spacing on the left of the string
