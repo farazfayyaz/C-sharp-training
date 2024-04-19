@@ -24,15 +24,18 @@
 
 // Console.WriteLine(yourDiscount);
 
-int invoiceNumber = 1201;
-decimal productShares = 25.4568m;
-decimal subtotal = 2750.00m;
-decimal taxPercentage = .15825m;
-decimal total = 3185.19m;
+//------------------------------------------------------------------------------
+// Using String formatting to display receipt information
 
-Console.WriteLine($"Invoice Number: {invoiceNumber}"); //regular formatted integer
+// int invoiceNumber = 1201;
+// decimal productShares = 25.4568m;
+// decimal subtotal = 2750.00m;
+// decimal taxPercentage = .15825m;
+// decimal total = 3185.19m;
 
-Console.WriteLine($"   Shares: {productShares:N3} Product"); //decimal up to 3rd value
-Console.WriteLine($"     Sub Total: {subtotal:C}"); //currency based on user culture
-Console.WriteLine($"           Tax: {taxPercentage:P2}"); //percentage up to 2nd decimal
-Console.WriteLine($"     Total Billed: {total:C}"); //currency based on user culture
+// Console.WriteLine($"Invoice Number: {invoiceNumber}"); //regular formatted integer
+
+// Console.WriteLine($"   Shares: {productShares:N3} Product"); //decimal up to 3rd value
+// Console.WriteLine($"     Sub Total: {subtotal:C}"); //currency based on user culture
+// Console.WriteLine($"           Tax: {taxPercentage:P2}"); //percentage up to 2nd decimal
+// Console.WriteLine($"     Total Billed: {total:C}"); //currency based on user culture
