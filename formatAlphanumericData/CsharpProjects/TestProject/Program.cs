@@ -39,3 +39,8 @@
 // Console.WriteLine($"     Sub Total: {subtotal:C}"); //currency based on user culture
 // Console.WriteLine($"           Tax: {taxPercentage:P2}"); //percentage up to 2nd decimal
 // Console.WriteLine($"     Total Billed: {total:C}"); //currency based on user culture
+
+//------------------------------------------------------------------------------
+
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12)); // padleft method adds spacing on the left of the string
