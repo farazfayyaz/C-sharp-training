@@ -43,4 +43,8 @@
 //------------------------------------------------------------------------------
 
 string input = "Pad this";
-Console.WriteLine(input.PadRight(12)); // padleft method adds spacing on the left of the string
+// Console.WriteLine(input.PadRight(12)); // padleft method adds spacing on the left of the string
+
+// overloaded methods are methods with extra arguments that modify the funtionality of the method slightly
+Console.WriteLine(input.PadLeft(12, '-'));
+ Console.WriteLine(input.PadRight(12, '-'));
