@@ -7,4 +7,4 @@ int closingPosition = message.IndexOf(')');
 // Console.WriteLine(closingPosition);
 
 int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition, length + 1));
+Console.WriteLine(message.Substring(openingPosition, length + 1)); //Substring needs starting position and number of characters/length
