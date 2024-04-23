@@ -22,12 +22,12 @@
 
 string message = "What is the value <span>between the tags</span>?";
 
-const string openSpan = "<span>";
+const string openSpan = "<span>"; //const keyword allows you to define a variable that can never be changed
 const string closeSpan = "</span>";
 
 int openingPosition = message.IndexOf(openSpan);
 int closingPosition = message.IndexOf(closeSpan);
 
-openingPosition += openSpan.Length;
+openingPosition += openSpan.Length; //determines the length of the openSpan, which can be changed
 int length = closingPosition - openingPosition;
 Console.WriteLine(message.Substring(openingPosition, length));
