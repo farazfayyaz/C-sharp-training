@@ -36,7 +36,7 @@ string message = "(What if) there are (more than) one (set of parentheses)?";
 while (true)
 {
     int openingPosition = message.IndexOf('(');
-    if (openingPosition == -1) break;
+    if (openingPosition == -1) break; //if there is no '(' then IndexOf returns -1
 
     openingPosition += 1;
     int closingPosition = message.IndexOf(')');
